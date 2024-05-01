@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2 ease-in-out
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.2 ease-in-out
+}
+
+/* Navigation */
+
+nav {
+
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 10px;
+    z-index: 50;
+}
+
+.navigation {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bar_icon {
+    font-size: 30px;
+}
+
+/* Hero Section */
+
+.hero {
+    /* background-color: bisque; */
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_content {
+    /* background-color: aqua; */
+
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 300px;
+    /* text-align: center; */
+
+}
+
+.tag {
+    background-color: #149f39;
+    color: white;
+    /* font-size: 2px; */
+    padding: 5px 9px;
+    align-self: flex-start;
+}
+
+.hero_content h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.btn {
+    align-self: flex-start;
+    /* font-size: 15px; */
+    background-color: #ffc066;
+    color: white;
+}
+
+.features {
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.feature {
+    display: flex;
+    gap: 20px;
+    transition: 0.2s ease-in-out;
+    padding: 20px;
+}
+
+.feature:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+
+.divider {
+    border: 5px solid #ccc;
+    margin: 20px 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    /* coloum use then align-items: ; */
+    align-items: center;
+}
+
+.menu .tag {
+    align-self: center;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "I1 I1 I2 I3"
+        "I1 I1 I2 I7"
+        "I4 I5 I6 I7";
+}
+
+.grid-image {
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    height: 100%;
+    width: 100%;
+
+}
+
+.grid-image:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.item1 {
+    grid-area: I1;
+}
+
+.item2 {
+    grid-area: I2;
+}
+
+.item3 {
+    grid-area: I3;
+}
+
+.item4 {
+    grid-area: I4;
+}
+
+.item5 {
+    grid-area: I5;
+}
+
+
+.item6 {
+    grid-area: I6;
+}
+
+.item7 {
+    grid-area: I7;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #fff0db;
+
+}
+
+.link_lists h3 {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+
+
+.link_lists ul {
+    list-style: none;
+}
+
+.link_lists ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.news_letter h3 {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.news_letter input {
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.icon_container {
+    display: flex;
+    font-size: 25px;
+    gap: 15px;
+}
+
+
+
+@media (max-width:786px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero_image {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_image img {
+        max-width: 80%;
+
+    }
+
+    .hero_content {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .hero_content h1 {
+        font-size: 32px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .grid {
+        padding: 10px;
+    }
+
+    .grid-image {
+        border-radius: 0;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+}
